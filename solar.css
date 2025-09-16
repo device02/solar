@@ -4,6 +4,7 @@
     margin: 0px;
 }
 
+
 header{
     display: flex;
     gap: 200px;
@@ -37,6 +38,7 @@ header a:hover{
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 20px;
     color: black;
     font-weight: bolder;
 }
@@ -96,14 +98,24 @@ border-bottom-left-radius: 50% 10%;  /* curve bottom left */
 .videotext button{
     font-size: 25px;
     margin-top: 20px;
-    background-color: orange;
+    background-color: greenyellow;
     padding: 10px 15px;
     border-radius: 25px;
     border: none;
     color:  black;
     font-weight: bolder;
 }
+.logovideo{
+    position: absolute;
+  bottom: -90%;   /* pushes it down beyond the video */
+  left: 100%;
+  transform: translateX(-50%);
+  width: 150px;    /* adjust logo size */
+  z-index: 10; 
+  border-radius: 100px;
+}
 .trusted{
+    
    display: flex;
   flex-direction: column;
   justify-content: center;  /* vertical center */
@@ -165,6 +177,99 @@ border-bottom-left-radius: 50% 10%;  /* curve bottom left */
     background-color:green ;
     cursor: pointer;
 }
+
+
+
+/* Section container */
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+/* Card styling */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px 60px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Icon at the top */
+.icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #ff6600;
+}
+
+/* Headings */
+.card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* List items */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.card ul li {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Button */
+.card button {
+  background: orange;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 25px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.card button:hover {
+  background: #e65500;
+  transform: translateX(-50%) scale(1.05);
+}
+
+
+
+
+
+
+
 
 
 .section3head{
@@ -300,7 +405,7 @@ footer{
         text-decoration: none;
     }
     .socials a:hover{
-        color: yellow;
+        color: greenyellow;
         transform: scale(1.1);
         transition: 0.3s;
     }
