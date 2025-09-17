@@ -27,7 +27,7 @@ header a:hover{
     text-decoration: underline;
     transform: scale(1.1);
     transition: 0.3s;
-}
+   }
 .logo{
     width: 60px;
     height: 60px;
@@ -332,7 +332,11 @@ border-bottom-left-radius: 50% 10%;  /* curve bottom left */
     font-weight: bolder;
     color: rgb(50, 50, 50);
 }
-
+.clients{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 .footersection{
    display: flex;
    flex-direction: row;
@@ -369,7 +373,7 @@ border-bottom-left-radius: 50% 10%;  /* curve bottom left */
     color: white;
 }
 .footersection a:hover{
-    color: yellow;
+    color: greenyellow;
     text-decoration: underline;
     transform: scale(1.1);
     transition: 0.3s;
