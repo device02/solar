@@ -22,7 +22,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 40px 5%;
+  padding: 10px 5%;
   background: linear-gradient(90deg, #ff8a00 0%, #ff6a00 100%);
   color: #fff;
 }
@@ -36,8 +36,8 @@ header {
   color: #111;
 }
 .logo {
-  width: 52px;
-  height: 52px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -371,7 +371,7 @@ a:focus, button:focus { outline: 3px solid #ffefb6; outline-offset: 3px; }
   width: 80%;
   background: #c0daac;
   border-radius: 20px;
-  margin: 120px auto ;
+  margin: 20px auto ;
     padding: 5px 6%;
   
 
@@ -393,20 +393,34 @@ a:focus, button:focus { outline: 3px solid #ffefb6; outline-offset: 3px; }
 .whc-content {
   flex: 1;
   min-width: 350px;
-  padding: 40px;
+  padding: 30px;
   position: relative;
 }
 
 /* Experience badge */
 .experiencebadge {
     position: absolute;
-  top: 32%;
+  top: 18%;
   left: 50px;
   background: #c0daac;
   color: white;
   text-align: center;
     padding: 20px 20px;
   border-radius: 5px;
+}
+
+/* Tablet view adjustments (max 1024px wide) */
+@media (max-width: 1024px) {
+  .experiencebadge {
+   display: none;
+  }
+}
+
+/* Mobile view adjustments (max 600px wide) */
+@media (max-width: 600px) {
+  .experiencebadge {
+    display: none;
+  }
 }
 
 .experiencebadge h1 {
