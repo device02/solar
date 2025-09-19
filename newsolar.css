@@ -405,17 +405,17 @@ a:focus, button:focus { outline: 3px solid #ffefb6; outline-offset: 3px; }
   background: #c0daac;
   color: white;
   text-align: center;
-    padding: 80px 20px;
+    padding: 20px 20px;
   border-radius: 5px;
 }
 
 .experiencebadge h1 {
-  font-size: 5.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
 .experiencebadge p {
-  font-size: 1.5rem;
+  font-size: 1.rem;
   line-height: 1.4;
 }
 
