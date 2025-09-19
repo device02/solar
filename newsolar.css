@@ -685,3 +685,34 @@ a:focus, button:focus { outline: 3px solid #ffefb6; outline-offset: 3px; }
   font-size: 32px;
   line-height: 60px;
 }
+
+
+
+/* Base state (hidden before scroll) */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px); /* Start slightly below */
+  transition: all 1.8s ease-out;
+}
+
+/* When active */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variants for fun */
+.reveal.fade-left {
+  transform: translateX(-50px);
+}
+
+.reveal.fade-right {
+  transform: translateX(50px);
+}
+
+.reveal.zoom {
+  transform: scale(0.9);
+}
+.reveal.zoom.active {
+  transform: scale(1);
+}
