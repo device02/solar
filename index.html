@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="newsolar.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -13,18 +14,17 @@
             <p>CARENERGY</p>         
         </div>
         <div class="toplinks">
-        <a href="index.html">Home</a>
-        <a href="classes.html">Our Services</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="ourservices.html">Our Services</a>
         <a href="aboutus.html">About Us</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="#contact">Contact Us</a>
+        <a href="contactus.html">Contact Us</a>
          </div>
          <div>
             <!-- <button class="requestquote" href="aftersignup.html" >Request Quote</button>-->
          </div>
 
     </header>
-    <section class="videosection">
+    <section class="section1">
      <video autoplay muted loop playsinline>
     <source src="assets/solarvideo.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -32,7 +32,7 @@
   <div class="videotext">
     <h1>Powering a Sustainable Future with Solar Energy</h1>
     <p>Discover the benefits of solar energy and how it can transform your home or business. Join us in creating a greener, more sustainable world.</p>
-    <button class="requestquote" href="aftersignup.html" >Request Quote</button>
+    <button onclick="window.location.href='contactus.html'"  class="requestquote" >Request Quote</button>
   </div>
       <img src="assets/solar.jpg" class="logovideo">
 
@@ -49,7 +49,7 @@
                     We not only deliver premium-quality solar products, but also design one stop solar solutions with clients electricity consumption needs. Guaranteed after-sales service.</p>
             </div>
         <div>
-            <button>Reach Out</button>
+            <button onclick="window.location.href='contactus.html'" >Reach Out</button>
         </div>
         </section>
    
@@ -57,7 +57,9 @@
 
 
 
-
+        <div class="trusted">
+            <h1> Payment Plans</h1>
+        </div>
         <section class="pricing">
   <div class="card">
     <div class="icon">📅</div>
@@ -70,7 +72,7 @@
       <li>✔ Flexible payment schedule based on your income</li>
       <li>✔ Payment reminders and easy tracking</li>
     </ul>
-    <button>Choose This Option</button>
+    <button onclick="window.location.href='contactus.html'" >Choose This Option</button>
   </div>
 
   <div class="card">
@@ -84,7 +86,7 @@
       <li>✔ Pay cash or transfer upon delivery</li>
       <li>✔ Same day installation available</li>
     </ul>
-    <button>Choose This Option</button>
+    <button onclick="window.location.href='contactus.html'" >Choose This Option</button>
   </div>
 
   <div class="card">
@@ -98,7 +100,7 @@
       <li>✔ Extended warranty options available</li>
       <li>✔ Bank transfer or online payment</li>
     </ul>
-    <button>Choose This Option</button>
+    <button onclick="window.open('contactus.html')" >Choose This Option</button>
   </div>
 </section>
 
@@ -173,16 +175,15 @@
     <div class="secondfooter">
         <h2> Quick Links</h2>
         <a href="index.html">Home</a>
-        <a href="classes.html">Our Services</a>
+        <a href="ourservices.html">Our Services</a>
         <a href="aboutus.html">About Us</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="#contact">Contact Us</a>
+        <a href="contactus.html">Contact Us</a>
          </div>
         <div class="thirdfooter">
            <h2>Contact Us</h2>
-        <p>Phone: +234 901 234 5678</p>
-        <p>Email:viccasvictor@gmail.com</p>
-        <p>Address: 41 Lagos Street Lagos Nigeria</p>
+        <p>Phone:<span class="gap"> +234 901 234 5678</span></p>
+        <p>Email: <span class="gap">viccasvictor@gmail.com</span></p>
+        <p>Address:<span class="gap"> 41 Lagos Street Lagos Nigeria</span></p>
         </div>
         <div class="fourthfooter">
            <h2>Working Hours</h2>
@@ -209,12 +210,19 @@
      <div class="copyright">
         <p>© 2024 Carenergy. All rights reserved. | Privacy Policy | Terms of Service | Cookie Policy</p>   
     </div>
-    <!-- Scroll to Top Button -->
+    <!-- Scroll to Top Button 
 <button class="scroll-btn top-btn" onclick="scrollToTop()">⬆</button>
 
-<!-- Scroll to Bottom Button -->
+ Scroll to Bottom Button 
 <button class="scroll-btn bottom-btn" onclick="scrollToBottom()">⬇</button>
-</footer>
+
+
+ WhatsApp Floating Button -->
+ </footer>
+<a href="https://wa.me/2347062777839" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
 
     <script src="solar.js"></script>
 </body>
